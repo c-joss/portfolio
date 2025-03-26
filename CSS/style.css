@@ -1,0 +1,16 @@
+:root {
+    --byzantium: #7a306cff;
+    --cool-gray: #8e8dbeff;
+    --non-photo-blue: #a9e4efff;
+    --light-green: #81f495ff;
+    --lawn-green: #96f550ff;
+}
+
+body {
+    background-color: var(--non-photo-blue);
+}
+
+main {
+    background-color: white;
+    width: 80%;
+}
