@@ -81,15 +81,19 @@ body {
     -moz-box-shadow: 8px 8px 0px 0px rgba(122, 48, 108, 1);
 }
 
-.greeting h1 {
+.intro-container h1 {
     font-size: 2rem;
     color: var(--byzantium);
     margin-bottom: 0.5rem;
 }
 
-.greeting p {
+.intro-container p {
     font-size: 1rem;
     color: black
+}
+
+.intro-container {
+    text-align: center;
 }
 
 .greeting strong {
@@ -134,6 +138,26 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.computer-image {
+    position: relative;
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.computer-pixel {
+    width: 160px;
+    height: auto;
+}
+
+.invader-image {
+    position: absolute;
+    top: 35px;
+    left: 45%;
+    width: 35px;
+    height: auto;
 }
 
 footer {
