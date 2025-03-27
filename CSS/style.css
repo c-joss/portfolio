@@ -68,7 +68,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 0rem;
 }
 
@@ -149,26 +149,41 @@ body {
     margin: 1.5rem 0;
 }
 
+.button-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+}
+
 .greeting {
     width: 80vw;
-    height: 90vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-shrink: 0;
+}
+
+.computer-wrapper {
+    display: block;
 }
 
 .computer-image {
     position: relative;
-    margin-top: 0;
     width: 160px;
-    margin: 0 auto 0;
+    margin: 2rem auto 0;
 }
 
 .computer-pixel {
+    display: block;
     width: 100%;
     height: auto;
 }
@@ -348,9 +363,9 @@ footer a {
     margin-bottom: 1.5rem;
     position: relative;
     border: 1px solid var(--byzantium);
-    box-shadow: 0px 4px 8px 0px rgba(122,48,108,0.98) inset;
--webkit-box-shadow: 0px 4px 8px 0px rgba(122,48,108,0.98) inset;
--moz-box-shadow: 0px 4px 8px 0px rgba(122,48,108,0.98) inset;
+    box-shadow: 0px 4px 8px 0px rgba(122, 48, 108, 0.98) inset;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(122, 48, 108, 0.98) inset;
+    -moz-box-shadow: 0px 4px 8px 0px rgba(122, 48, 108, 0.98) inset;
 }
 
 .fill {
@@ -362,12 +377,35 @@ footer a {
     animation: fill-bar 2s ease-out forwards;
 }
 
-.fill.html {animation-delay:0s; --scale: 0.75}
-.fill.css {animation-delay:0.5s; --scale: 0.5}
-.fill.javascript {animation-delay:1s; --scale: 0.4}
-.fill.react {animation-delay:1.5s; --scale: 0.1}
-.fill.python {animation-delay:2s; --scale: 0.1}
-.fill.vba {animation-delay:2.5s; --scale: 0.8}
+.fill.html {
+    animation-delay: 0s;
+    --scale: 0.75
+}
+
+.fill.css {
+    animation-delay: 0.5s;
+    --scale: 0.5
+}
+
+.fill.javascript {
+    animation-delay: 1s;
+    --scale: 0.4
+}
+
+.fill.react {
+    animation-delay: 1.5s;
+    --scale: 0.1
+}
+
+.fill.python {
+    animation-delay: 2s;
+    --scale: 0.1
+}
+
+.fill.vba {
+    animation-delay: 2.5s;
+    --scale: 0.8
+}
 
 .skill-wrapper {
     background-color: var(--cool-gray);
@@ -451,6 +489,7 @@ form {
     align-items: center;
     gap: 1.5rem;
     margin-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 input[type="text"],
@@ -488,15 +527,234 @@ button[type="submit"] {
 }
 
 @keyframes invader-move {
-    0% {transform: translateX(-50%) translateY(0);}
-    25% {transform: translateX(-40%) translateY(2px);}
-    50% {transform: translateX(-50%) translateY(0);}
-    75% {transform: translateX(-60%) translateY(2px);}
-    100% {transform: translateX(-50%) translateY(0);}
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    25% {
+        transform: translateX(-40%) translateY(2px);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    75% {
+        transform: translateX(-60%) translateY(2px);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
 }
 
 @keyframes fill-bar {
     to {
         transform: scaleX(var(--scale));
     }
+}
+
+@media screen and (min-height: 375px) and (min-height: 667px) {
+    #home-nav button {
+        min-width: 70vw;
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .computer-image {
+        width: 100px;
+        margin-bottom: 4rem;
+        margin-top: 0;
+    }
+
+    #home-nav {
+        margin-bottom: 1rem;
+    }
+
+    .scroll-section {
+        min-height: 390px;
+        height: 550px;
+    }
+}
+
+
+@media screen and (min-width: 390px) and (min-height: 844px) {
+    .intro-container h1 {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+
+    .intro-container p {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #home-nav button {
+        padding: 1rem;
+        min-width: 70vw;
+        font-size: 2rem;
+    }
+
+    #home-nav {
+        margin-top: 1rem;
+    }
+
+    .computer-image {
+        width: 150px;
+    }
+
+    .scroll-section {
+        min-height: 390px;
+        height: 90vh;
+    }
+
+    .greeting {
+        min-height: 450px;
+    }
+}
+
+@media screen and (min-width: 820px) and (min-height: 1180px) {
+    .intro-container h1 {
+        font-size: 3.5rem;
+        margin-top: 3rem;
+    }
+
+    .intro-container p {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    #home-nav button {
+        padding: 1rem;
+        min-width: 70vw;
+        font-size: 2rem;
+    }
+
+    #home-nav {
+        margin-top: 4rem;
+    }
+
+    .computer-image {
+        width: 300px;
+        margin-bottom: 4rem;
+        margin-top: 0rem;
+    }
+
+    .scroll-section {
+        min-height: 390px;
+    }
+
+    .greeting {
+        min-height: 350px;
+        height: 700px
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .intro-container h1 {
+        font-size: 4rem;
+        margin-top: 6rem;
+    }
+
+    .intro-container p {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #home-nav button {
+        min-width: 30vw;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .computer-image {
+        width: 300px;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+
+    .button-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        max-width: 600px;
+        margin: 2rem auto;
+        row-gap: 0;
+        justify-content: center;
+
+    }
+
+    .button-grid a {
+        display: block;
+        width: 100%;
+    }
+
+    #home-nav .button-grid button {
+        width: 400px;
+        max-width: unset;
+        min-width: unset;
+        justify-self: center;
+
+    }
+
+    #home-nav {
+        margin-bottom: 2rem;
+    }
+
+    .greeting {
+        max-height: 50vh;
+    }
+
+    .scroll-section {
+        max-width: 1500px;
+    }
+
+    .top-icons {
+        max-width: 1400px;
+    }
+
+    .about-wrapper {
+        display: block;
+    }
+
+    .about-image-wrapper {
+        float: right;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        width: 300px;
+        max-width: 40%;
+    }
+
+    .about-image {
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+        border-radius: 8px;
+        border: 3px solid var(--byzantium);
+    }
+
+    .about-image figcaption {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        color: var(--byzantium);
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+
+    .about-image figcaption em {
+        font-weight: 500;
+        display: block;
+        margin-top: 0.25rem;
+    }
+
+    .about-text {
+        overflow: hidden;
+    }
+
 }
