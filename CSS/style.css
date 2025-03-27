@@ -225,8 +225,8 @@ footer {
     text-align: right;
     color: var(--byzantium);
     font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1rem;
     letter-spacing: 1px;
 }
@@ -246,18 +246,18 @@ footer {
 
 .page-heading {
     font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-weight: 700;
+    font-style: normal;
     font-size: 3rem;
     letter-spacing: 1px;
     color: var(--byzantium);
-    text-shadow: 4px 4px 2px rgba(129,244,149,0.25);
+    text-shadow: 4px 4px 2px rgba(129, 244, 149, 0.25);
 }
 
 .about-text {
     font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .about-text h2 {
@@ -265,10 +265,11 @@ footer {
 }
 
 .skills-container {
-    background-color: transparent; 
+    background-color: transparent;
     text-align: left;
-    overflow: visible; 
-  }
+    overflow: visible;
+    width: 70vw;
+}
 
 .skills-list label {
     font-family: "Pixelify Sans", sans-serif;
@@ -284,11 +285,14 @@ footer {
 
 .skills-list {
     list-style-type: none;
-    padding: none;
+    padding: 0;
     margin: 0;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-  progress {
+progress {
     -webkit-appearance: none;
     appearance: none;
     border: none;
@@ -296,31 +300,47 @@ footer {
     width: 100%;
     height: 1.5rem;
     overflow: hidden;
-  }  
+}
 
-  .skills-list progress::-webkit-progress-bar {
+.skills-list progress::-webkit-progress-bar {
     background-color: var(--non-photo-blue);
     border-radius: 6px;
-  }  
+}
 
-  .skills-list progress::-webkit-progress-value {
+.skills-list progress::-webkit-progress-value {
     background-color: var(--light-green);
     border-radius: 6px 0 0 6px;
-  }  
+}
 
-  .skills-list progress::-moz-progress-bar {
+.skills-list progress::-moz-progress-bar {
     background-color: var(--light-green);
     border-radius: 6px 0 0 6px;
-  }
+}
 
-  .skill-wrapper {
+.skill-wrapper {
     background-color: var(--cool-gray);
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 4px 4px 0 var(--byzantium);
     margin-top: 2rem;
-  }
+}
 
-  .skills-list li {
+.skills-list li {
     margin-bottom: 1.5rem;
-  }
+    width: 100%;
+    max-width: 600px;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-content p {
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
