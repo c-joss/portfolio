@@ -76,15 +76,16 @@ body {
 
 .button-radius {
     border-radius: 8px;
-    box-shadow: 8px 8px 0px 0px rgba(122, 48, 108, 1);
-    -webkit-box-shadow: 8px 8px 0px 0px rgba(122, 48, 108, 1);
-    -moz-box-shadow: 8px 8px 0px 0px rgba(122, 48, 108, 1);
+    box-shadow: 4px 4px 0px 0px rgba(122, 48, 108, 1);
+    -webkit-box-shadow: 4px 4px 0px 0px rgba(122, 48, 108, 1);
+    -moz-box-shadow: 4px 4px 0px 0px rgba(122, 48, 108, 1);
 }
 
 .intro-container h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--byzantium);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
 }
 
 .intro-container p {
@@ -108,24 +109,36 @@ body {
     background-color: var(--cool-gray);
     border-color: var(--byzantium);
     border-width: 2px;
-    padding: 2rem;
+    padding: 1rem;
+    min-width: 300px;
     width: 100%;
+    min-height: 70px;
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-size: 1.5rem;
+    letter-spacing: 1px;
     color: white;
     cursor: pointer;
+    transition: all 0.12s ease;
+    transform-origin: center;
+    text-align: center;
+    padding: 0;
 }
 
 .scroll-nav button:hover {
     color: var(--light-green);
+    font-size: 1.8rem;
+    transform: scale(1.05);
 }
 
 #home-nav {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 2rem 0;
 }
 
 .greeting {
@@ -142,21 +155,21 @@ body {
 
 .computer-image {
     position: relative;
-    margin-top: 3rem;
-    width: 100%;
-    text-align: center;
+    margin-top: 0;
+    width: 160px;
+    margin: 0 auto 0;
 }
 
 .computer-pixel {
-    width: 160px;
+    width: 100%;
     height: auto;
 }
 
 .invader-image {
     position: absolute;
-    top: 35px;
-    left: 45%;
-    width: 35px;
+    top: 20%;
+    left: 28%;
+    width: 20%;
     height: auto;
 }
 
@@ -165,6 +178,7 @@ footer {
     padding: 1rem;
     background-color: var(--non-photo-blue);
     width: 100%;
+    margin-top: 2rem;
 }
 
 .radius {
