@@ -176,9 +176,11 @@ body {
 .invader-image {
     position: absolute;
     top: 20%;
-    left: 28%;
+    left: 45%;
     width: 20%;
     height: auto;
+    transform: translateX(-50%);
+    animation: invader-move 0.5s steps(1) infinite;
 }
 
 footer {
@@ -478,4 +480,12 @@ button[type="submit"] {
     box-shadow: 4px 4px 0px 0px rgba(122, 48, 108, 0.98);
     -webkit-box-shadow: 4px 4px 0px 0px rgba(122, 48, 108, 0.98);
     -moz-box-shadow: 4px 4px 0px 0px rgba(122, 48, 108, 0.98);
+}
+
+@keyframes invader-move {
+    0% {transform: translateX(-50%) translateY(0);}
+    25% {transform: translateX(-40%) translateY(2px);}
+    50% {transform: translateX(-50%) translateY(0);}
+    75% {transform: translateX(-60%) translateY(2px);}
+    100% {transform: translateX(-50%) translateY(0);}
 }
