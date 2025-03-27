@@ -33,7 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80vw;
+    width: 75vw;
     padding: 1rem 2rem;
     background-color: transparent;
     z-index: 10;
@@ -44,10 +44,10 @@ body {
     gap: 1rem;
 }
 
-.home-icon, 
+.home-icon,
 .social-links img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: block;
     object-fit: contain;
 }
@@ -61,7 +61,79 @@ body {
     height: 80vh;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    margin-top: 4.2rem;
+    margin-top: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-radius {
+    border-radius: 8px;
+    box-shadow: 8px 8px 0px 0px rgba(142, 141, 190, 1);
+    -webkit-box-shadow: 8px 8px 0px 0px rgba(142, 141, 190, 1);
+    -moz-box-shadow: 8px 8px 0px 0px rgba(142, 141, 190, 1);
+}
+
+.button-radius {
+    border-radius: 8px;
+    box-shadow: 8px 8px 0px 0px rgba(122, 48, 108, 1);
+    -webkit-box-shadow: 8px 8px 0px 0px rgba(122, 48, 108, 1);
+    -moz-box-shadow: 8px 8px 0px 0px rgba(122, 48, 108, 1);
+}
+
+.greeting h1 {
+    font-size: 2rem;
+    color: var(--byzantium);
+    margin-bottom: 0.5rem;
+}
+
+.greeting p {
+    font-size: 1rem;
+    color: black
+}
+
+.greeting strong {
+    color: var(--byzantium);
+}
+
+.scroll-nav {
+    height: 40vh;
+}
+
+.scroll-nav button {
+    background-color: var(--cool-gray);
+    border-color: var(--byzantium);
+    border-width: 2px;
+    padding: 2rem;
+    width: 100%;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.scroll-nav button:hover {
+    color: var(--light-green);
+}
+
+#home-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting {
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 footer {
@@ -69,4 +141,8 @@ footer {
     padding: 1rem;
     background-color: var(--non-photo-blue);
     width: 100%;
+}
+
+.radius {
+    border-radius: 8px;
 }

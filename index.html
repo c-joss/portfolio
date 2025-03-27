@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Courtney</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -23,24 +28,26 @@
                 </a>
             </div>
         </header>
-        <main class="scroll-section">
-            <nav class="scroll-nav" id="home-nav">
-                <a href="about.html">
-                    <button type="button">Aout Me</button>
-                </a>
-                <a href="skills.html">
-                    <button type="button">Skills</button>
-                </a>
-                <a href="projects.html">
-                    <button type="button">Projects</button>
-                </a>
-                <a href="contact.html">
-                    <button type="button">Contact</button>
-                </a>
-            </nav>
+        <main class="scroll-section page-radius">
             <section class="greeting">
-                <h1>Hi there!</h1>
-                <p>My name is <strong id="name">Courtney</strong><br>I'm a web developer in training.</p>
+                <div class="intro-container">
+                    <h1>Hi there!</h1>
+                    <p>My name is <strong id="name">Courtney</strong><br>I'm a web developer in training.</p>
+                </div>
+                <nav class="scroll-nav" id="home-nav">
+                    <a href="about.html">
+                        <button class="button-radius" type="button">ABOUT ME</button>
+                    </a>
+                    <a href="skills.html">
+                        <button class="button-radius" type="button">SKILLS</button>
+                    </a>
+                    <a href="projects.html">
+                        <button class="button-radius" type="button">PROJECTS</button>
+                    </a>
+                    <a href="contact.html">
+                        <button class="button-radius" type="button">CONTACT</button>
+                    </a>
+                </nav>
                 <div class="computer-image">
                     <img src="Images/computer.PNG" alt="Image of cute pixel computer" class="computer-image">
                     <img src="Images/invader.png" alt="Image of space invader" class="invader-image">
@@ -50,7 +57,8 @@
     </div>
     <footer>
         <p>&copy; 2025 Courtney Macgregor. Find me on <a href="https://github.com/c-joss" target="_blank">GitHub</a> |
-            <a href="https://www.linkedin.com/in/courtney-macgregor-0426911b3/" target="_blank">LinkedIn</a></p>
+            <a href="https://www.linkedin.com/in/courtney-macgregor-0426911b3/" target="_blank">LinkedIn</a>
+        </p>
     </footer>
 </body>
 
