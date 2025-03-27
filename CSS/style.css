@@ -387,3 +387,48 @@ progress {
   font-weight: 400;
   font-style: normal;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: 2px solid var(--byzantium);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 180px;
+}
+
+button[type="submit"] {
+    padding: 1rem 2rem;
+    background-color: var(--lawn-green);
+    color: var(--byzantium);
+    font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 4px 4px 0px 0px rgba(122,48,108,0.98);
+-webkit-box-shadow: 4px 4px 0px 0px rgba(122,48,108,0.98);
+-moz-box-shadow: 4px 4px 0px 0px rgba(122,48,108,0.98);
+
+}
