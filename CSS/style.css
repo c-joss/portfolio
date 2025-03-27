@@ -33,7 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75vw;
+    width: 80vw;
     padding: 1rem 2rem;
     background-color: transparent;
     z-index: 10;
@@ -46,8 +46,8 @@ body {
 
 .home-icon,
 .social-links img {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     display: block;
     object-fit: contain;
 }
@@ -58,24 +58,25 @@ body {
     overflow-x: hidden;
     padding: 2rem;
     box-sizing: border-box;
-    width: 80vw;
-    max-height: 80vh;
-    min-height: 60vh;
+    width: 90vw;
+    max-height: 90vh;
+    min-height: 75vh;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    margin-top: 3.5rem;
+    margin-top: 2.9rem;
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 10rem;
+    padding-top: 0rem;
 }
 
 .page-radius {
     border-radius: 12px;
-    box-shadow: 12px 12px 0px 0px rgba(142, 141, 190, 1);
-    -webkit-box-shadow: 12px 12px 0px 0px rgba(142, 141, 190, 1);
-    -moz-box-shadow: 12px 12px 0px 0px rgba(142, 141, 190, 1);
+    box-shadow: 6px 6px 0px 0px rgba(142, 141, 190, 1);
+    -webkit-box-shadow: 6px 6px 0px 0px rgba(142, 141, 190, 1);
+    -moz-box-shadow: 6px 6px 0px 0px rgba(142, 141, 190, 1);
 }
 
 .button-radius {
@@ -86,15 +87,17 @@ body {
 }
 
 .intro-container h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--byzantium);
     margin-bottom: 0;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
 }
 
 .intro-container p {
     font-size: 1rem;
-    color: black
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .intro-container {
@@ -114,21 +117,22 @@ body {
     border-color: var(--byzantium);
     border-width: 2px;
     padding: 1rem;
-    min-width: 300px;
+    min-width: 270px;
     width: 100%;
-    min-height: 70px;
+    min-height: 50px;
+    height: 100%;
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     color: white;
     cursor: pointer;
     transition: all 0.12s ease;
     transform-origin: center;
     text-align: center;
-    padding: 0;
+    padding: 1.5rem;
 }
 
 .scroll-nav button:hover {
@@ -140,14 +144,14 @@ body {
 #home-nav {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: center;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 .greeting {
     width: 80vw;
-    height: 60vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,10 +183,26 @@ body {
 
 footer {
     text-align: center;
-    padding: 1rem;
+    padding-top: 0;
+    margin-bottom: 2rem;
     background-color: var(--non-photo-blue);
     width: 100%;
-    margin-top: 2rem;
+    height: .05rem;
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: small;
+    position: sticky;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 10;
+    padding-bottom: 1;
+}
+
+footer a {
+    color: var(--byzantium);
+    font-weight: 600;
 }
 
 .radius {
@@ -193,20 +213,45 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 100%;
-    height: auto;
+    height: 100px;
     gap: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+    padding: 1rem;
 }
 
 .page-nav button {
-    min-width: 150px;
-    min-height: 60px;
+    min-width: 95px;
+    width: 95px;
+    min-height: 30px;
     text-transform: uppercase;
+    text-align: center;
+    background-color: var(--cool-gray);
+    border-color: var(--byzantium);
+    border-width: 2px;
+    padding: 0;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.12s ease;
+    transform-origin: center;
+    text-align: center;
+    position: sticky;
 }
 
 .about-content {
-    max-height: 80vh;
-    padding: 1rem;
+    max-height: 75vh;
+    width: 100%;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -251,6 +296,7 @@ footer {
     letter-spacing: 1px;
     color: var(--byzantium);
     text-shadow: 4px 4px 2px rgba(129, 244, 149, 0.25);
+    margin: 1rem;
 }
 
 .about-text {
@@ -322,6 +368,7 @@ progress {
     border-radius: 12px;
     box-shadow: 4px 4px 0 var(--byzantium);
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .skills-list li {
@@ -339,9 +386,9 @@ progress {
 
 .skills-content p {
     font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
 }
 
 .project-card {
@@ -350,8 +397,8 @@ progress {
     border: solid 2px var(--byzantium);
     border-radius: 8px;
     box-shadow: 4px 4px 0 var(--byzantium);
-    padding: 2rem;
-    width: 80%;
+    padding: .5rem;
+    width: 90%;
     max-width: 400px;
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
@@ -360,6 +407,7 @@ progress {
     font-size: 1.5rem;
     letter-spacing: 1px;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .projects-grid {
@@ -384,8 +432,8 @@ progress {
 
 .content p {
     font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 }
 
 form {
@@ -404,11 +452,11 @@ textarea {
     width: 80%;
     padding: 1rem;
     font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  border: 2px solid var(--byzantium);
-  border-radius: 10px;
-  box-sizing: border-box;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid var(--byzantium);
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 textarea {
@@ -421,14 +469,13 @@ button[type="submit"] {
     background-color: var(--lawn-green);
     color: var(--byzantium);
     font-family: "Pixelify Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 4px 4px 0px 0px rgba(122,48,108,0.98);
--webkit-box-shadow: 4px 4px 0px 0px rgba(122,48,108,0.98);
--moz-box-shadow: 4px 4px 0px 0px rgba(122,48,108,0.98);
-
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 4px 0px 0px rgba(122, 48, 108, 0.98);
+    -webkit-box-shadow: 4px 4px 0px 0px rgba(122, 48, 108, 0.98);
+    -moz-box-shadow: 4px 4px 0px 0px rgba(122, 48, 108, 0.98);
 }
