@@ -339,30 +339,35 @@ footer a {
     align-items: center;
 }
 
-progress {
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
-    border-radius: 6px;
+.skill-bar {
     width: 100%;
     height: 1.5rem;
-    overflow: hidden;
-}
-
-.skills-list progress::-webkit-progress-bar {
     background-color: var(--non-photo-blue);
-    border-radius: 6px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    position: relative;
+    border: 1px solid var(--byzantium);
+    box-shadow: 0px 4px 8px 0px rgba(122,48,108,0.98) inset;
+-webkit-box-shadow: 0px 4px 8px 0px rgba(122,48,108,0.98) inset;
+-moz-box-shadow: 0px 4px 8px 0px rgba(122,48,108,0.98) inset;
 }
 
-.skills-list progress::-webkit-progress-value {
+.fill {
+    height: 100%;
     background-color: var(--light-green);
-    border-radius: 6px 0 0 6px;
+    border-radius: 4px 0 0 4px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: fill-bar 2s ease-out forwards;
 }
 
-.skills-list progress::-moz-progress-bar {
-    background-color: var(--light-green);
-    border-radius: 6px 0 0 6px;
-}
+.fill.html {animation-delay:0s; --scale: 0.75}
+.fill.css {animation-delay:0.5s; --scale: 0.5}
+.fill.javascript {animation-delay:1s; --scale: 0.4}
+.fill.react {animation-delay:1.5s; --scale: 0.1}
+.fill.python {animation-delay:2s; --scale: 0.1}
+.fill.vba {animation-delay:2.5s; --scale: 0.8}
 
 .skill-wrapper {
     background-color: var(--cool-gray);
@@ -488,4 +493,10 @@ button[type="submit"] {
     50% {transform: translateX(-50%) translateY(0);}
     75% {transform: translateX(-60%) translateY(2px);}
     100% {transform: translateX(-50%) translateY(0);}
+}
+
+@keyframes fill-bar {
+    to {
+        transform: scaleX(var(--scale));
+    }
 }
