@@ -233,7 +233,6 @@ footer {
 
 .about-image em {
     font-weight: 500;
-
 }
 
 .about-image img {
@@ -343,4 +342,48 @@ progress {
   font-weight: 400;
   font-style: normal;
   text-align: center;
+}
+
+.project-card {
+    background-color: var(--cool-gray);
+    color: white;
+    border: solid 2px var(--byzantium);
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 var(--byzantium);
+    padding: 2rem;
+    width: 80%;
+    max-width: 400px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.projects-grid {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.content {
+    max-height: 80vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.content p {
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
