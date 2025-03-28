@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Courtney</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/style.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,21 +17,21 @@
     <div class="content-wrapper">
         <header class="top-icons">
             <a href="index.html">
-                <img src="Images/dino.png" alt="Home - Dinosaur Icon" class="home-icon" />
+                <img src="Images/dino.png" alt="Home - Dinosaur Icon" class="home-icon" >
             </a>
             <div class="social-links">
                 <a href="https://github.com/c-joss" target="_blank">
-                    <img src="Images/GitHub-icon.png" alt="GitHub" />
+                    <img src="Images/GitHub-icon.png" alt="GitHub" >
                 </a>
                 <a href="https://www.linkedin.com/in/courtney-macgregor-0426911b3/" target="_blank">
-                    <img src="Images/LinkedIn-icon.png" alt="LinkedIn" />
+                    <img src="Images/LinkedIn-icon.png" alt="LinkedIn" >
                 </a>
             </div>
         </header>
         <main class="scroll-section page-radius">
             <nav class="scroll-nav page-nav">
                 <a href="about.html">
-                    <button class="button-radius" type="button">Aout Me</button>
+                    <button class="button-radius" type="button">About Me</button>
                 </a>
                 <a href="skills.html">
                     <button class="button-radius" type="button">Skills</button>
@@ -45,10 +45,14 @@
                 <p>If you would like to connect or get in touch, send me a message using the form below or reach out via
                     my socials.</p>
                 <form action="#" method="POST">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required />
-                    <input type="email" id="email" name="email" placeholder="Your Email" required />
+                    <input type="text" id="name" name="name" placeholder="Your Name" required >
+                    <input type="email" id="email" name="email" placeholder="Your Email" required >
                     <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
+                    <button type="submit" class="flip-btn">
+                        <span class="front">Send Message</span>
+                        <span class="back">Send Message</span>
+                      </button>
+                      
                 </form>
             </section>
         </main>
